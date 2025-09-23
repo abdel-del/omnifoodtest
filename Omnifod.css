@@ -1,0 +1,961 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6e6cbcb;
+  padding: 32px 40px;
+}
+header img {
+  width: 14%;
+  height: 3.5vh;
+}
+
+header nav {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #f4a261;
+}
+nav a {
+  font-weight: 800;
+  margin-left: 30px;
+  font-size: 21px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.651);
+}
+.free-color:hover {
+  color: white;
+  background-color: #cf711f;
+}
+.free-color {
+  background-color: #f4a261;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.Omnifood-div {
+  display: flex;
+
+  margin: 0 auto;
+}
+
+/* section number 2 A helthy meal */
+
+.Omnifood-section {
+  padding: 4.8rem 2rem 9.6rem;
+  background-color: #f6e6cb;
+  height: calc(100vh - 35px);
+}
+
+.healthy-part {
+  flex: 0 0 40%;
+}
+.Three-images {
+  flex: 0 0 40%;
+}
+.Three-images img {
+  width: 100%;
+}
+
+.healthy-part h1 {
+  font-weight: 800;
+  font-size: 45px;
+  width: 35rem;
+  margin-bottom: 50px;
+  letter-spacing: -2px;
+  line-height: 50px;
+}
+.healthy-part p {
+  text-align: left;
+  font-size: 22px;
+  color: rgba(128, 128, 128, 0.71);
+  margin-bottom: 50px;
+  width: 32rem;
+}
+.healthy-part button {
+  margin-bottom: 37px;
+}
+
+.border-reduce-part img {
+  border-radius: 100%;
+  width: 55px;
+  margin-left: -35px;
+  border: 2px solid white;
+}
+
+.border-reduce-part p {
+  font-weight: 800;
+  font-size: 18px;
+  margin-top: 40px;
+}
+.border-reduce-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 20px;
+  gap: 15px;
+}
+
+.border-reduce-part span {
+  color: #ffa823;
+}
+
+.start {
+  background-color: #f4a261;
+  border: none;
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+.sart:hover {
+  background-color: #f46161;
+}
+.learn {
+  background-color: white;
+  border: 3px solid white;
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin-left: 18px;
+  transition: all 0.1s linear;
+}
+.learn:hover {
+  background-color: #f4a261;
+}
+
+/*small section: AS FEATURED IN*/
+
+.countiner-section {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 4.8rem 2rem 9.6rem;
+}
+
+.countiner-section img {
+  height: 2rem;
+  margin-top: 20px;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.AS-Section {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.countiner-section h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #888;
+}
+
+/* small section: 4 HOW IT WORKS */
+
+.section-works {
+  margin: 40px 80px;
+}
+
+.div-steps img {
+  width: 35%;
+}
+
+.div-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  gap: 3rem;
+}
+.div-info h2 {
+  font-size: 8.6rem;
+  color: #ddd;
+}
+.section-works a {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 750;
+  color: #cf711f;
+}
+.section-works h1 {
+  margin-top: 11px;
+  margin-bottom: 5rem;
+  font-size: 40px;
+  font-weight: 750;
+}
+.div-steps p {
+  margin-top: 1rem;
+  margin-top: 30px;
+}
+.div-info,
+.div-img {
+  flex: 0 0 50%;
+}
+.div-img {
+  text-align: center;
+  position: relative;
+}
+.div-info h3 {
+  font-size: 3rem;
+}
+.div-info p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.div-img::before {
+  width: 60%;
+  height: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+.div-img::before,
+.div-img::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.div-img::after {
+  width: 45%;
+  height: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+.phone-class::before {
+}
+
+/* small section: 2 APPROVE SECTION */
+
+.approve-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 80px;
+}
+
+.phone-class {
+  text-align: center;
+  flex: 0 0 35%;
+  position: relative;
+}
+.phone-class img {
+  width: 40%;
+}
+.paragraph-parth h1 {
+  font-size: 8.6rem;
+  color: #ddd;
+}
+
+.paragraph-parth h2 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+.paragraph-parth p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+
+.paragraph-parth,
+.phone-class {
+  flex: 0 0 50%;
+}
+
+.phone-class::before {
+  width: 60%;
+  height: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.phone-class::after {
+  width: 45%;
+  height: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+.phone-class::before,
+.phone-class::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* small section: 3 Approve your weekly meal plan*/
+
+.section-change-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 80px;
+}
+
+.image-time {
+  flex: 0 0 35%;
+  position: relative;
+  text-align: center;
+}
+.image-time img {
+  width: 45%;
+}
+.div-time h1 {
+  font-size: 8.5rem;
+  color: #ddd;
+}
+.div-time h3 {
+  font-size: 3rem;
+}
+.div-time p {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 30px;
+}
+
+.image-time::before {
+  width: 74%;
+  height: 60%;
+  background-color: #f7e7dc;
+  z-index: -2;
+}
+
+.image-time::after {
+  width: 57%;
+  height: 54%;
+  background-color: #ffd3b6;
+  z-index: -1;
+}
+
+.image-time::before,
+.image-time::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* big section:  Omnifood AI chooses from 5,000+ recipes */
+
+.Meals-section-recipes h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+.Margin-top {
+  margin-top: 60px;
+  text-align: center;
+}
+.Margin-top a:hover {
+  border: none;
+}
+.Meals-section-recipes a {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  font-weight: 600;
+  color: #cf711f;
+  transition: all 0.3s linear;
+}
+.Meals-section-recipes h4 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #cf711f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Meals-div {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 9rem;
+}
+.Japanese-Gyozas img {
+  width: 33rem;
+  height: 22rem;
+  margin-left: ;
+}
+.Japanese-Gyozas {
+  border: 1px solid #88888830;
+  border-radius: 10px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.Japanese-Gyozas:hover {
+  transform: translateY(-2%);
+}
+
+.Avocado-Salad img {
+  width: 33rem;
+  height: 22rem;
+}
+.Avocado-Salad {
+  border: 1px solid #88888830;
+  border-radius: 10px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.Avocado-Salad:hover {
+  transform: translateY(-2%);
+}
+
+.vegan {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 34px;
+  background-color: #88d66c;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.paled {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 3px;
+  background-color: #ffd35a;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.Avocado-Salad h2 {
+  padding-right: 10px;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.Avocado-Salad i {
+  color: #cf711f;
+  font-size: 20px;
+}
+
+.Avocado-Salad span {
+  color: #888;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 12px;
+}
+
+.Avocado-Salad ul {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 42px;
+  margin-left: 40px;
+  list-style: none;
+}
+
+.words-div p {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.words-div h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.words-div ul {
+  list-style: none;
+}
+
+.words-div li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.words-div i {
+  color: #cf711f;
+  font-size: 25px;
+}
+
+.star-part i {
+  color: #cf711f;
+  font-size: 20px;
+}
+
+.star-part {
+  padding-left: 4rem;
+}
+.star-part ul {
+  list-style: none;
+}
+.star-part h2 {
+  padding-right: 10px;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.star-part h3 {
+  font-size: 20px;
+  background-color: #389918b3;
+  padding-left: 8px;
+  margin-right: 17rem;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.star-part ul {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 42px;
+}
+
+.star-part span {
+  color: #888;
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 12px;
+}
+
+/* big section:  Once you try it, you can't go back */
+
+.Meals-plates-section {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #f4a3613b;
+  margin-top: 12rem;
+}
+
+.div-countiner-Meals {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 0 0 50%;
+}
+
+.div-countiner-Meals div {
+  flex: 0 0 30%;
+}
+
+.div-countiner-Meals img {
+  width: 100%;
+}
+
+.img-paragraph {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.img-paragraph img {
+  border-radius: 50%;
+  width: 70px;
+}
+
+.img-paragraph p {
+  font-size: 16px;
+}
+.img-paragraph {
+  flex: 0 0 40%;
+}
+
+.Dave-Bryso {
+  flex: 0 0 40%;
+}
+
+.Ben-Hadley {
+  flex: 0 0 40%;
+  line-height: 25px;
+}
+
+.Steve-Miller {
+  flex: 0 0 40%;
+}
+
+.Hannah-Smith {
+  flex: 0 0 40%;
+}
+
+.Once-sectiont h1 {
+  margin-top: 25rem;
+  font-size: 40px;
+  font-weight: 800;
+}
+.Once-sectiont a {
+  margin-top: 12rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+  color: #cf711f;
+  position: relative;
+}
+
+/* big section:  Eating well without breaking the bank */
+
+.section-photos-Menu {
+  margin: 40px 80px;
+}
+.section-photos-Menu h1 {
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 8rem;
+}
+.section-photos-Menu a {
+  color: #cf711f;
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.dollar {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-right: 0.8rem;
+  
+}
+.starter {
+  border: 1px solid #cf711f43;
+  border-radius: 10px;
+  padding-left: 5rem;
+  padding-right: 4rem;
+  padding-bottom: 8rem;
+}
+.starter p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.619);
+}
+.Xmark {
+  margin-top: 12px;
+}
+.starter i {
+  color: #cf711f;
+  font-size: 25px;
+  margin-top: px;
+}
+
+.starter h1 {
+  color: #cf711f;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.starter h3 {
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 13px;
+  text-align: center;
+}
+
+.starter h5 {
+  font-size: 17px;
+  color: #888;
+  margin-top: 18px;
+}
+
+.starter ul {
+  margin-top: 20px;
+  list-style: none;
+}
+.starter li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  line-height: 46px;
+}
+
+.starter button {
+  background-color: #cf711fdd;
+  padding: 13px 30px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 19px;
+  font-weight: 750;
+  color: rgba(255, 255, 255, 0.865);
+  margin-top: 7rem;
+  text-align: center;
+}
+.complete {
+  background-color: #f8ede3;
+  border-radius: 10px;
+  border-radius: 10px;
+  padding-left: 6rem;
+  padding-right: 4rem;
+  padding-bottom: 8rem;
+}
+.complete li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  line-height: 46px;
+}
+.complete i {
+  color: #cf711f;
+  font-size: 18px;
+}
+.complete ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.complete h5 {
+  font-size: 17px;
+  color: #888;
+  margin-top: 18px;
+}
+
+.complete h3 {
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 13px;
+  text-align: center;
+}
+.complete p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.619);
+}
+
+.complete h1 {
+  color: #cf711f;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.complete button {
+  background-color: #cf711fdd;
+  padding: 13px 30px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 19px;
+  font-weight: 750;
+  color: rgba(255, 255, 255, 0.865);
+  margin-top: 7rem;
+  text-align: center;
+}
+.div-two-Menu {
+  display: flex;
+  gap: 7rem;
+  margin-left: 10rem;
+}
+.last-paragraph {
+  font-size: 17px;
+  color: #888;
+  text-align: center;
+  margin-top: 55px;
+}
+
+/* big section:  Local and organic 4 icons */
+
+.section-paragraph {
+  margin: 90px 70px;
+}
+
+.div-four-paragraph {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.div-four-paragraph h3 {
+  font-size: 23px;
+  font-weight: 800;
+  padding-bottom: 16px;
+}
+.div-four-paragraph p {
+  font-size: 17px;
+  line-height: 25px;
+  color: #888;
+}
+
+.All-icons i {
+  border-radius: 50px;
+  background-color: #cf711f1a;
+  padding: 20px 20px 20px;
+  color: #cf711f;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* big section:  image of smiling girl */
+
+.label-input-section {
+  max-width: 110rem;
+  margin: 2rem auto;
+  display: flex;
+  background-color: #cf711fd0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 50rem;
+  margin-bottom: ;
+}
+
+.image-smiling {
+  flex: 0 0 37%;
+  margin-left: 3rem;
+}
+.image-smiling img {
+  width: 100%;
+  object-fit: cover;
+}
+
+select {
+  display: block;
+  padding: 16px 63px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  font-size: 13px;
+}
+label {
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+input {
+  display: block;
+  padding: 16px 65px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: px;
+  color: #888;
+}
+
+.label-input-section button {
+  padding: 13px 86px;
+  margin-right: 20px;
+  border-radius: 10px;
+  background-color: #32012f;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+form {
+  display: flex;
+  margin-top: 8rem;
+  margin-left: 50px;
+  gap: 18px;
+}
+.div-countiners {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.div-countiners h1 {
+  font-size: 37px;
+  font-weight: 800;
+}
+
+.div-countiners p {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.715);
+  margin-top: 40px;
+}
+
+/*small section:4   omnifood footer */
+
+.omnifood-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 80px;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+.first-part-div {
+  width: 22%;
+}
+.img-omnifood-ft img {
+  width: 55%;
+  margin-bottom: 12px;
+}
+.first-part-div i {
+  font-size: 20px;
+  color: #888;
+  margin-left: 20px;
+  margin-top: 18px;
+}
+
+.first-part-div p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-top: 7rem;
+  color: #888;
+}
+
+.omnifood-footer h3 {
+  font-size: 17px;
+}
+.second-part-div {
+  width: 22%;
+}
+.second-part-div p {
+  font-size: 17px;
+  color: #888;
+  margin-top: 30px;
+}
+
+.third-part-div p {
+  font-size: 17px;
+  color: #888;
+  margin-top: 25px;
+}
